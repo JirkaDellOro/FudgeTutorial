@@ -3,7 +3,41 @@
     "ƒ.Graph": {
       "name": "Tutorial",
       "active": true,
-      "components": {},
+      "components": {
+        "ComponentMesh": [
+          {
+            "ƒ.ComponentMesh": {
+              "idMesh": "MeshCube|2023-07-11T10:16:44.222Z|57458",
+              "pivot": {
+                "translation": "[0, 0, 0]",
+                "rotation": "[0, 0, 0]",
+                "scaling": "[1, 1, 1]"
+              },
+              "Component": {
+                "active": true
+              }
+            }
+          }
+        ],
+        "ComponentMaterial": [
+          {
+            "ƒ.ComponentMaterial": {
+              "sortForAlpha": false,
+              "clrPrimary": "[1, 1, 1, 1]",
+              "clrSecondary": "[1, 1, 1, 1]",
+              "pivot": {
+                "translation": "[0, 0]",
+                "rotation": 0,
+                "scaling": "[1, 1]"
+              },
+              "Component": {
+                "active": true
+              },
+              "idMaterial": "Material|2023-07-11T10:16:48.475Z|02663"
+            }
+          }
+        ]
+      },
       "children": [],
       "idResource": "Graph|2023-07-11T10:16:36.922Z|72207",
       "type": "Graph"
