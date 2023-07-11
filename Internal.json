@@ -18,6 +18,30 @@
       }
     }
   },
+  "Material|2023-07-11T12:47:07.219Z|72617": {
+    "ƒ.Material": {
+      "name": "HFU",
+      "idResource": "Material|2023-07-11T12:47:07.219Z|72617",
+      "shader": "ShaderLitTextured",
+      "coat": {
+        "ƒ.CoatTextured": {
+          "color": "[1, 1, 1, 1]",
+          "idTexture": "TextureImage|2023-07-11T12:49:28.672Z|33945"
+        }
+      }
+    }
+  },
+  "TextureImage|2023-07-11T12:49:28.672Z|33945": {
+    "ƒ.TextureImage": {
+      "url": "Image\\LogoHFU.png",
+      "type": "TextureImage",
+      "Texture": {
+        "idResource": "TextureImage|2023-07-11T12:49:28.672Z|33945",
+        "name": "Image\\LogoHFU.png",
+        "mipmap": "CRISP"
+      }
+    }
+  },
   "Graph|2023-07-11T10:16:36.922Z|72207": {
     "ƒ.Graph": {
       "name": "Tutorial",
@@ -30,7 +54,7 @@
               "pivot": {
                 "translation": "[0, 0, 0]",
                 "rotation": "[0, 60, 0]",
-                "scaling": "[2, 0.3999999165534973, 0.30000001192092896]"
+                "scaling": "[0.6999997496604919, 0.3999999165534973, 0.4000000059604645]"
               },
               "Component": {
                 "active": true
@@ -52,7 +76,7 @@
               "Component": {
                 "active": true
               },
-              "idMaterial": "Material|2023-07-11T10:16:48.475Z|02663"
+              "idMaterial": "Material|2023-07-11T12:47:07.219Z|72617"
             }
           }
         ]
