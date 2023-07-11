@@ -1,1 +1,31 @@
-{}
+{
+  "Graph|2023-07-11T10:16:36.922Z|72207": {
+    "ƒ.Graph": {
+      "name": "Tutorial",
+      "active": true,
+      "components": {},
+      "children": [],
+      "idResource": "Graph|2023-07-11T10:16:36.922Z|72207",
+      "type": "Graph"
+    }
+  },
+  "MeshCube|2023-07-11T10:16:44.222Z|57458": {
+    "ƒ.MeshCube": {
+      "idResource": "MeshCube|2023-07-11T10:16:44.222Z|57458",
+      "name": "MeshCube",
+      "type": "MeshCube"
+    }
+  },
+  "Material|2023-07-11T10:16:48.475Z|02663": {
+    "ƒ.Material": {
+      "name": "ShaderLit",
+      "idResource": "Material|2023-07-11T10:16:48.475Z|02663",
+      "shader": "ShaderLit",
+      "coat": {
+        "ƒ.CoatColored": {
+          "color": "[1, 1, 1, 1]"
+        }
+      }
+    }
+  }
+}
