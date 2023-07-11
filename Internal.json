@@ -61,5 +61,46 @@
       "idResource": "Graph|2023-07-11T10:16:36.922Z|72207",
       "type": "Graph"
     }
+  },
+  "MeshSphere|2023-07-11T12:37:07.244Z|42991": {
+    "ƒ.MeshSphere": {
+      "idResource": "MeshSphere|2023-07-11T12:37:07.244Z|42991",
+      "name": "MeshSphere",
+      "type": "MeshSphere",
+      "longitudes": 14,
+      "latitudes": 11
+    }
+  },
+  "MeshPolygon|2023-07-11T12:39:41.977Z|27570": {
+    "ƒ.MeshPolygon": {
+      "idResource": "MeshPolygon|2023-07-11T12:39:41.977Z|27570",
+      "name": "ArrowHead",
+      "type": "MeshPolygon",
+      "shape": {
+        "ƒ.Vector2": [
+          "[-1, -1]",
+          "[0, -1.5]",
+          "[1, -1]",
+          "[0, 1]"
+        ]
+      },
+      "fitTexture": true
+    }
+  },
+  "MeshRotation|2023-07-11T12:41:38.682Z|55843": {
+    "ƒ.MeshRotation": {
+      "idResource": "MeshRotation|2023-07-11T12:41:38.682Z|55843",
+      "name": "Drum",
+      "type": "MeshRotation",
+      "shape": {
+        "ƒ.Vector2": [
+          "[0.20000001788139343, 0.5]",
+          "[0.5, 0.5]",
+          "[0.5, -0.5]",
+          "[0.20000001788139343, -0.5]"
+        ]
+      },
+      "longitudes": 11
+    }
   }
 }
