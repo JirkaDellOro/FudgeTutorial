@@ -42,6 +42,21 @@
       }
     }
   },
+  "Material|2023-07-13T07:37:05.169Z|55624": {
+    "ƒ.Material": {
+      "name": "ShaderPhongTextured",
+      "idResource": "Material|2023-07-13T07:37:05.169Z|55624",
+      "shader": "ShaderPhongTextured",
+      "coat": {
+        "ƒ.CoatRemissiveTextured": {
+          "color": "[1, 1, 1, 1]",
+          "idTexture": "TextureImage|2023-07-11T12:49:28.672Z|33945",
+          "diffuse": 1,
+          "specular": 0
+        }
+      }
+    }
+  },
   "Graph|2023-07-11T10:16:36.922Z|72207": {
     "ƒ.Graph": {
       "name": "Tutorial",
@@ -76,7 +91,26 @@
               "Component": {
                 "active": true
               },
-              "idMaterial": "Material|2023-07-11T12:47:07.219Z|72617"
+              "idMaterial": "Material|2023-07-13T07:37:05.169Z|55624"
+            }
+          }
+        ],
+        "ComponentLight": [
+          {
+            "ƒ.ComponentLight": {
+              "pivot": {
+                "translation": "[0, 1.5, -1.4000015258789062]",
+                "rotation": "[0, 367, 0]",
+                "scaling": "[121.8489990234375, 121.03900146484375, 35.67799377441406]"
+              },
+              "light": {
+                "ƒ.LightPoint": {
+                  "color": "[1, 1, 1, 1]"
+                }
+              },
+              "Component": {
+                "active": true
+              }
             }
           }
         ]
