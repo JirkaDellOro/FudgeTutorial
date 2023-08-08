@@ -1,0 +1,426 @@
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    
+    <div id="container">
+        <div id="header">
+            <!-- <h1> FUDGE-Tutorial </h1> -->
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <p><img id="TutorialHeader"src="https://github.com/JirkaDellOro/FudgeTutorial/assets/48796243/bb570e8a-748b-4f85-8834-e7244f21e3b9"
+                        alt="Tutorial_Header01"></p>
+                <p>Welcome to
+                    the FudgeTutorial wiki. Here you can learn how FUDGE is built and how to work with its
+                    functionalities.
+                </p>
+                <h1 id="getting-started">Getting started</h1>
+                <p>First of all, you need to set up the working environment. Here we will show you how to install the
+                    FUDGE
+                    repository
+                    on your environment and get the first glimpse of the FUDGE editor.</p>
+                <h2 id="create-a-github-account">create a GitHub account</h2>
+                <p>this is optional, as you will be able to download the repository locally even without an account.
+                    Note,
+                    however, that
+                    upcoming changes to the engine will not be applied and you will have to manually re-download new
+                    versions.</p>
+                <p>A new account can be created <a
+                        href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">here</a>.
+                </p>
+                <h2 id="download-clone-fudge-repository">download/clone FUDGE-Repository</h2>
+                <p>Open the FUDGE repository via Code -&gt; Clone or via GitHub Desktop and clone the repository. As
+                    mentioned earlier,
+                    you can simply download the repository as a ZIP locally to your working environment.</p>
+                <h2 id="install-fudge">install FUDGE</h2>
+                <p>In order to install FUDGE, you need to make sure that you have the following installed in addition to
+                    the
+                    local
+                    files:</p>
+                <ul>
+                    <li><strong>Nodejs</strong> - needed to install FUDGE and get it running. Follow the installation
+                        procedure at <a href="https://nodejs.org/en">https://nodejs.org/en</a></li>
+                    <li><strong>TypeScript</strong> - This is optional, but recommended to write custom scripts in
+                        FUDGE. To
+                        install
+                        TypeScript globally, type npm install -g typescript in the terminal. Alternatively, you can use
+                        JavaScript to
+                        write the scripts.</li>
+                </ul>
+                <p>Once this is done, follow the steps below:</p>
+                <ul>
+                    <li>Extract the ZIP file into the desired folder.</li>
+                    <li>Install the needed modules via <code>npm install --omit=dev</code> in the terminal in the folder
+                        where FUDGE is
+                        included or just run the install.bat(Windows only).
+                        If the repository has been cloned, you can skip the first step.</li>
+                </ul>
+                <h2 id="start-editor">Start editor</h2>
+                <p>to open the FUDGE editor now, you have the following options:</p>
+                <ul>
+                    <li>type electron <code>editor/electron</code> in the terminal</li>
+                    <li>alternatively you can use <code>npm run-script run</code></li>
+                    <li>use the FUDGE.bat file in the folder (Windows only)</li>
+                </ul>
+                <h2 id="user-interface">User Interface</h2>
+                <p>If the installation was completed successfully, you will now see an empty window with a browser
+                    console.
+                </p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/106c0813-64b7-4913-b643-1c35768cd912"
+                        alt="BildEditorEmptyScaled"></p>
+                <h1 id="fundamentals">Fundamentals</h1>
+                <p>Here we will explain the first steps in FUDGE and how everything is set up to help you get started
+                    with
+                    the engine,
+                    if there are any questions after the tutorial, don&#39;t hesitate to post an issue or call for help
+                    in
+                    Discord in
+                    the game lab.</p>
+                <h2 id="creating-a-new-project">Creating a new project</h2>
+                <p>To start a new project in FUDGE, go to Project - New , and select the folder of your choice. The
+                    editor
+                    will create
+                    all the data you need for your project there, as well as make any changes you have made to the
+                    project.
+                </p>
+                <h2 id="overview-editor">Overview Editor</h2>
+                <p>Once the project is created, you can now open the tabs for editing the project. In the Project tab
+                    you
+                    can create new
+                    projects, load existing ones and save your current one. In the Edit tab you can see all the tabs you
+                    can
+                    use for
+                    your work. These tabs can be closed and opened as you like, as well as moved around in the window as
+                    you
+                    like. This
+                    allows you to customize your working environment. In the debug tab you can open the browser console
+                    in
+                    case you
+                    accidentally closed it or show the window in full screen. </p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/bb2671fb-e08a-476c-b042-f707c5a9d483"
+                        alt="BildEditorAufbauExampleScaled"></p>
+                <p>It is good to know that you can change the theme of the editor as you like or even design one
+                    yourself.
+                    Go to HTML -
+                    Fudge.html and comment the desired theme or create a new stylesheet and include it there.</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/b7d5389c-7bd4-4f65-95fd-7f1211c68577"
+                        alt="BildLinkTheme"></p>
+                <p>Important! In order to detect and monitor errors at an early stage, it is advisable to always have
+                    the
+                    browser
+                    console open in the editor as well as in the Internet browser. You can also expand the messages of
+                    Fudge
+                    by
+                    expanding the messages in the browser console. </p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/1bf8168c-844e-48e5-a252-62faa63ac8ea"
+                        alt="BildChangeBrowserConsoleSettings"></p>
+                <h2 id="overview-folder-structure">Overview folder structure</h2>
+                <p>Since the project is stored locally in your folder, you can also view them in Explorer. This is where
+                    all
+                    the
+                    resources you need for your project are created and stored.</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/eecdf856-7396-4995-b6d9-15cb96866564"
+                        alt="OrdnerStruktur"></p>
+                <p>Here you can also add your own images, graphics, models that you may need for your project. It is
+                    best to
+                    create a
+                    new folder for external data to keep the overview.</p>
+                <h2 id="create-graph">Create Graph</h2>
+                <p>The project has been created, but there is no content to view it yet. If you want to view your
+                    project
+                    right now, the
+                    internet browser will give you the following error message:</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/4b561b83-d33d-4483-aecb-7df9c31d1865"
+                        alt="BildNothingHereScaled"></p>
+                <p>Now, to see something on the browser, we need to add a graph, mesh and material to the project. To do
+                    this,
+                    right-click on Internal in the editor and follow the steps on the following image:</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/21f603d5-7e23-425a-b4ca-bd2e81428587"
+                        alt="BildAblaufCreateMesh"></p>
+                <h2 id="test-the-project-in-the-browser">Test the project in the browser</h2>
+                <p>If you want to test the project live in the browser or test it on other devices, you can do this via
+                </p>
+                <ul>
+                    <li>LiveServer plugin, which VSC provides. </li>
+                    <li>localhost</li>
+                    <li>GitHub Pages, where you upload your project to GitHub.</li>
+                </ul>
+                <h2 id="json-overview">JSON Overview</h2>
+                <p>If you look at the internal.json file on your development environment, you will see all the resources
+                    that FUDGE has
+                    created over the course of the project, what attributes they have, and how they relate to each
+                    other.
+                    Here you can
+                    see the graph, mesh and material you created in the previous step.</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/0722d4b7-635b-4989-bac3-f47007967c10"
+                        alt="BildAufbauJSON"></p>
+                <p>For now, the resources are just there. Throughout the tutorial, the file will change and expand as we
+                    add
+                    new objects
+                    and connect existing ones. </p>
+                <h2 id="build-a-graph">Build a graph</h2>
+                <p>To view the created resources in the browser, they must first be attached to a node.
+                    For this, a node must be created in the editor. If you drag the graph into the editor, it will
+                    create a
+                    node itself.
+                </p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/15baf0ef-a8f8-4818-883d-64b774908f04"
+                        alt="BildCreateNodeScaled"></p>
+                <p>For the remaining components, you have to create a node yourself and attach the resources. This can
+                    be
+                    done by
+                    drag&amp;drop. First the mesh, then the material. Alternatively, you can create the components by
+                    right-clicking -
+                    add Component - ComponentMesh/ComponentMaterial and then attach the desired resources from the
+                    Internal
+                    tab.</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/51a230f3-abb2-43e1-b141-0de3e7726858"
+                        alt="BildAppendResources"></p>
+                <h2 id="pivot">Pivot</h2>
+                <p>Each node and resource has its own point (pivot) in the coordinate system. Around this point they can
+                    be
+                    moved,
+                    rotated and scaled.</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/0c155834-644b-4294-b6c5-bbd359c70e49"
+                        alt="BildComponentAttributesScaled"></p>
+                <ul>
+                    <li>Tip: You can edit the operations via the numerical values, as well as via key combinations
+                        ((translate(X,Y,Z+Mouse move)),(rotate),(scale)) and with the mouse in the graph editor.</li>
+                </ul>
+                <h2 id="meshes-and-their-parameters">Meshes and their parameters</h2>
+                <p>FUDGE offers you several meshes that you can use for your project.</p>
+                <ul>
+                    <li>MeshCube - Generates a simple cube with edges of length 1, each face consisting of two trigons
+                    </li>
+                    <li>MeshPolygon - Generates a flat polygon. All trigons share vertex 0, so careful design is
+                        required to
+                        create
+                        concave polygons. Vertex 0 is also associated with the face normal.</li>
+                    <li>MeshExtrusion - Generates an extrusion of a polygon by a series of transformations</li>
+                    <li>MeshPyramid - Generates a simple pyramid with edges at the base of length 1 and a height of 1.
+                        The
+                        sides
+                        consisting of one, the base of two trigons</li>
+                    <li>MeshQuad - Generates a simple quad with edges of length 1, the face consisting of two trigons
+                    </li>
+                    <li>MeshTerrain - A terrain spreads out in the x-z-plane,
+                        y is the height derived from the heightmap function.
+                        The terrain is always 1 in size in all dimensions,fitting into the unit-cube. Resolution
+                        determines
+                        the number
+                        of quads in x and z dimension, scale the factor applied to the x,z-coordinates passed to the
+                        heightmap function.
+                        Standard function is the simplex noise implemented with FUDGE, but another function can be
+                        given.
+                    </li>
+                    <li>MeshRelief - Generates a planar Grid and applies a Heightmap-Function to it.</li>
+                    <li>MeshRotation - Generates a rotation of a polygon around the y-axis</li>
+                    <li>MeshSphere - Generate a UV Sphere with a given number of sectors and stacks (clamped at 128*128)
+                    </li>
+                    <li>MeshSprite - Generate two quads placed back to back, the one facing in negative Z-direction is
+                        textured reversed
+                    </li>
+                    <li>MeshTorus - Generate a Torus with a given thickness and the number of major- and minor segments
+                    </li>
+                </ul>
+                <h2 id="materials">Materials</h2>
+                <p>Shaders realize surface properties of the 3D object, such as gloss and matte, bumps, color and
+                    texture.
+                    Without
+                    shaders we can&#39;t see the mesh in the graph at all. FUDGE offers different shaders for different
+                    use
+                    cases.</p>
+                <p>You can also load images, graphics or textures externally into the project and include them in the
+                    shaders. To do
+                    this, create a new folder in the project, insert an image, bind it to a component and then attach it
+                    to
+                    the mesh.
+                </p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/c36e099b-501d-4199-890a-dfa625adf08b"
+                        alt="BildLinkHfuToShader"></p>
+                <h2 id="lights">Lights</h2>
+                <p>The scene needs light so that you can see the objects in the browser. The editor automatically turns
+                    on
+                    light when it
+                    detects that no light exists in the graph.
+                    <img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/b410d612-c167-4d74-a992-5b8f63e8c0be"
+                        alt="BildLightIcon">
+                </p>
+                <p>Now let&#39;s give our box a light component. To do this, we select the node where the box is and
+                    right-click on the
+                    Components tab in the editor. Then click on addComponents -&gt; LightComponent to add the component
+                    to
+                    the node.</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/767a6e17-afa0-41cf-b64f-3623aa7c4cb1"
+                        alt="BildCreateLight"></p>
+                <p>There are different types of ComponentLight. Besides the types, you can also change the color of the
+                    light, as well
+                    as the size and direction of the light. How the different types behave can be seen in the FUDGE
+                    wiki.
+                </p>
+                <h2 id="transform">Transform</h2>
+                <p>If you want to move an object with different meshes, you have to move each mesh one by one. this is
+                    of
+                    course
+                    tedious. The easy way is to attach the nodes as children to a ParentNode and move them with
+                    ComponentTransform.
+                    Create a new node and drag in the nodes you want to move together. These will be the children. Then
+                    add
+                    the
+                    ComponentTransform component to the ParentNode.</p>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/4d11ff23-3868-4a6f-8383-447229d288b1"
+                        alt="BildCreateParentAndTransformCompScaled"></p>
+                <p>Now you can move, scale and rotate all the children together via the parent´s component.</p>
+                <p>In the internal.json file you can see all objects, how they are built, which materials they have and
+                    how
+                    they are
+                    connected to each other. </p>
+                <h2 id="html-file">HTML-file</h2>
+                <p>The index.html file is the core of the project. This is where everything comes together. In the file
+                    you
+                    can rename
+                    the page, as well as edit and view all links (internal.json/CustomScript/AutoViewScript). Here it is
+                    also helpful to
+                    pay attention to the comments.
+                    For example, if you need physics later in the project, it is necessary to uncomment the line
+                    afterwards
+                    so that it
+                    is included in the project.
+                    The fudge-core and -aid library are fetched from the internet in the html file. So if you want to
+                    work
+                    locally, it
+                    is necessary to create the library locally and change the path in the file.
+                    The dialog element is necessary at the start, so that audio elements (if you have built them in) can
+                    be
+                    started and
+                    the mouse position in the browser can be locked when interacting. So you can see this like a kind of
+                    &quot;start&quot; button. </p>
+                <h2 id="autoview-script">Autoview-Script</h2>
+                <p>The AutoView script allows viewing the graph in the internet browser. Since we have not yet set up a
+                    camera in the
+                    project ourselves, the script itself places an orbit camera in the scene, casts the graph onto the
+                    canvas element in
+                    the browser, and thus gives us the ability to view our project live.
+                    The following keyboard shortcuts are helpful for navigating in AutoView:
+                    | Interaction | Function |
+                    | ----------------------------------|:----------------------------------------------------:|
+                    | left click | setting the point of rotation |
+                    | alt + left click | change viewing direction from point of rotation |
+                    | right click+mouse movement/right click(+shift)+Q/E/A/D | change viewing direction from Camera
+                    viewpoint |
+                    | mouse wheel/right click+W/S | zoom in/out |
+                    | alt + right click + mousemovement | zoom in/out |</p>
+                <h3 id="structure-autoview-script">Structure autoview script</h3>
+                <p>The script only serves as a kind of &quot;startup&quot;. It displays the graph specified in the HTML
+                    file, plays the
+                    sounds if any exist in the scene and adds an orbit camera.
+                    It is not recommended to extend this script. Instead, use the lines as a template to implement some
+                    of
+                    the
+                    functionality in your code, as the script will become obsolete for you as the project progresses.
+                </p>
+                <h2 id="coding">Coding</h2>
+                <h3 id="notes">Notes</h3>
+                <ul>
+                    <li>For further coding, TypeScript is recommended to avoid common errors that happen with pure
+                        JavaScript.</li>
+                    <li><strong>IMPORTANT</strong>: The d.ts file in the @types subfolder MUST match the current FUDGE
+                        version in order
+                        for the TypeScript compiler to provide you with full support.</li>
+                    <li>As the project progresses, other d.ts files may come up to provide further assistance(If you
+                        want to
+                        work with
+                        FUDGE-NET, etc.).</li>
+                    <li>the tsconfig file gives instructions to the compiler how to compile your written code.</li>
+                    <li>Note that all your code ends up in <strong>Script.js</strong> in the build folder when compiled.
+                        <h3 id="main-ts">Main.ts</h3>
+                        In the script folder of your project there are 2 folders: build and source. in build all your
+                        compiled code ends
+                        up in script.js.
+                        In this script, for the first time, there is only the warning that you always see in the browser
+                        console when
+                        you start the project.</li>
+                </ul>
+                <p><img src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/8e1be273-7a9b-41eb-9bb9-0acada6104c9"
+                        alt="BildErrorLogJSScaled"></p>
+                <p>In the source folder you will find the tsconfig file, the @types folder and 2 .ts files:
+                    CustomComponentScript and
+                    Main.
+                    We will save the CustomComponentScript for later. Let&#39;s have a look at Main.ts first.</p>
+                <pre><code><span class="hljs-keyword">namespace</span> Script {
+  <span class="hljs-meta"><span class="hljs-meta-keyword">import</span> ƒ = FudgeCore;</span>
+  ƒ.Debug.info(<span class="hljs-string">"Main Program Template running!"</span>);
+
+  let viewport: ƒ.Viewport;
+  document.addEventListener(<span class="hljs-string">"interactiveViewportStarted"</span>, &lt;EventListener&gt;start);
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span><span class="hljs-params">(_event: CustomEvent)</span>: void </span>{
+    viewport = _event.detail;
+
+    ƒ.Loop.addEventListener(ƒ.EVENT.LOOP_FRAME, update);
+    <span class="hljs-comment">// ƒ.Loop.start();  // start the game loop to continously draw the viewport, update the audiosystem and drive the physics i/a</span>
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span><span class="hljs-params">(_event: Event)</span>: void </span>{
+    <span class="hljs-comment">// ƒ.Physics.simulate();  // if physics is included and used</span>
+    viewport.draw();
+    ƒ.AudioManager.default.update();
+  }
+}
+</code></pre>
+                <p>For now, there is not much in it. How to work with Loop/Update will be explained in the following
+                    chapters. Let&#39;s
+                    first see that we get rid of the warning from the console. For this we simply build Main.ts the
+                    first
+                    time via the
+                    development environment (VSCode = CTRL+Shift+B - npm:build task).
+                    After this is done, the Script.js file should look like this:</p>
+                <p>[BildScriptJsAfter]</p>
+                <h2 id="manipulation">Manipulation</h2>
+                <h2 id="loop">Loop</h2>
+                <p>The loop, also game-loop, is the heart of applications that rely on frequent rendering of scenes to
+                    create moving
+                    visuals. That is not the case for all games, but many. The loop dispatches a LOOP_FRAME event with
+                    every
+                    beat to all
+                    registered consumers. The desired framerate is adjustable and can be based on different time
+                    instances.
+                    The default
+                    setup is tying the framerate to the browsers animation-request functionality and base the timing on
+                    Time.game.</p>
+                <h2 id="events">Events</h2>
+                <h2 id="arten-von-manipulation">Arten von Manipulation</h2>
+                <h2 id="component-script">Component-Script</h2>
+                <h2 id="interaction">Interaction</h2>
+                <h2 id="control">Control</h2>
+                <h2 id="time">Time</h2>
+                <p>FUDGE supports multiple and scalable times. Mostly used are the built in game-time and real-time.
+                    Realtime is the
+                    time of the system running FUDGE and cannot be manipulated. The game-time on the other hand may be
+                    slowed down or
+                    sped up, set or reset. All time dependent functionality referring to game-time thus reacts
+                    accordingly.
+                    Creators may
+                    define more time-instances as desired. The class Time is a fundamental class to use in FUDGE.</p>
+                <h2 id="audio">Audio</h2>
+            </div>
+        </div>
+        <div id="navigation">
+        </div>
+        <div id="extra">
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
