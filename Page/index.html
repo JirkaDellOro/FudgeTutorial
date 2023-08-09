@@ -7,11 +7,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
+  
   </head>
 
   <body>
-    <!-- <div id="NavBar"></div> -->
 
+    
+    <!-- <div id="NavBar"></div> -->
+    <div class="overlay" onclick="closeOverlay()">
+      <img id="overlayImage" src="" alt="Enlarged Image">
+    </div>
     <p>
       <img
         id="TutorialHeader"
@@ -269,6 +275,12 @@
           <div class="FloatClearer"></div>
 
           <p>
+            <img
+              src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/51a230f3-abb2-43e1-b141-0de3e7726858"
+              alt="BildAppendResources"
+            />
+          </p>
+          <p>
             For the remaining components, you have to create a node yourself and
             attach the resources. This can be done by drag&amp;drop. First the
             mesh, then the material. Alternatively, you can create the
@@ -276,12 +288,9 @@
             ComponentMesh/ComponentMaterial and then attach the desired
             resources from the Internal tab.
           </p>
-          <p>
-            <img
-              src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/51a230f3-abb2-43e1-b141-0de3e7726858"
-              alt="BildAppendResources"
-            />
-          </p>
+          <div class="FloatClearer"></div>
+
+          
           <h2 id="pivot">Pivot</h2>
           <p>
             <img
@@ -338,7 +347,7 @@
               MeshQuad - Generates a simple quad with edges of length 1, the
               face consisting of two trigons
             </li>
-            <img class="Polygons" src="Images/Meshes/Quad.png"></img>
+            <img class="Polygons" src="Images/Meshes/Quad.png" onclick="openOverlay('Images/Meshes/Quad.png')"></img>
             <div class="FloatClearer"></div>
             <li>
               MeshTerrain - A terrain spreads out in the x-z-plane, y is the
@@ -353,7 +362,7 @@
               MeshRelief - Generates a planar Grid and applies a
               Heightmap-Function to it.
             </li>
-            <img class="Polygons" src="Images/Meshes/Terrain.png"></img>
+            <img class="Polygons" src="Images/Meshes/Terrain.png" onclick="openOverlay('Images/Meshes/Terrain.png')"></img>
           <div class="FloatClearer"></div>
             <li>
               MeshRotation - Generates a rotation of a polygon around the y-axis
@@ -398,28 +407,31 @@
               alt="BildLinkHfuToShader"
             />
           </p>
+          <div class="FloatClearer"></div>
           <h2 id="lights">Lights</h2>
           <p>
             <img
               src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/b410d612-c167-4d74-a992-5b8f63e8c0be"
               alt="BildLightIcon"
             />
+            
             The scene needs light so that you can see the objects in the
             browser. The editor automatically turns on light when it detects
             that no light exists in the graph.
           </p>
+          <div class="FloatClearer"></div>
 
-          <p>
-            Now let&#39;s give our box a light component. To do this, we select
-            the node where the box is and right-click on the Components tab in
-            the editor. Then click on addComponents -&gt; LightComponent to add
-            the component to the node.
-          </p>
           <p>
             <img
               src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/767a6e17-afa0-41cf-b64f-3623aa7c4cb1"
               alt="BildCreateLight"
             />
+          </p>
+          <p>
+            Now let&#39;s give our box a light component. To do this, we select
+            the node where the box is and right-click on the Components tab in
+            the editor. Then click on addComponents -&gt; LightComponent to add
+            the component to the node.
           </p>
           <p>
             There are different types of ComponentLight. Besides the types, you
