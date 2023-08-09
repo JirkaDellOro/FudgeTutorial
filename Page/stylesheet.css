@@ -89,6 +89,7 @@ img {
   border-radius: 5px;
   float: right;
   margin-bottom: 5%;
+  border: solid 2px #884A39;
 }
 
 .Banner {
@@ -122,13 +123,23 @@ img {
   color: #C38154;
 }
 
+.Polygons {
+  width: 15%;
+  float:left;
+  border: none;
+  margin-left: 100px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
 
 #TutorialHeader {
   /* border: solid 5px red; */
-max-width: 100%;
+  max-width: 100%;
   width: 200% !important;
   float: none;
   clear: both;
+  border: none;
 }
 
 #NavBar {
