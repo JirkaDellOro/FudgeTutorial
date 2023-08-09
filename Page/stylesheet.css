@@ -85,16 +85,17 @@ div#extra {
 }
 
 img {
-  max-width: 100%;
+  max-width: 75%;
   border-radius: 5px;
+  float: right;
+  margin-bottom: 5%;
 }
 
 .Banner {
   height: 5em;
 }
 
-.Content {
-}
+
 
 .Line {
   width: 100%;
@@ -111,13 +112,23 @@ img {
   margin-top: 50px;
 }
 
+.FloatClearer {
+  float: none;
+  clear: both;
+}
+
+
 .FudgeText {
   color: #C38154;
 }
 
+
 #TutorialHeader {
   /* border: solid 5px red; */
-  width: 200%;
+max-width: 100%;
+  width: 200% !important;
+  float: none;
+  clear: both;
 }
 
 #NavBar {
