@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +13,11 @@
 
   <body>
     <div id="SideBar">
-      <button onclick="sidebar_switch()">☰</button>
+      <button
+        class="fa fa-bars"
+        aria-hidden="true"
+        onclick="sidebar_switch()"
+      ></button>
       <ul id="SideBar_Content">
         <li><a href="#getting-started">Getting Started</a></li>
         <li><a href="#fundamentals">Fundamentals</a></li>
@@ -44,6 +49,7 @@
             Here you can learn how FUDGE is built and how to work with its
             functionalities.
           </h2>
+
           <div class="Content">
             <h1 id="getting-started">Getting started</h1>
             <div class="Line"></div>
@@ -60,11 +66,11 @@
               manually re-download new versions.
             </p>
             <p>
-              A new account can be created
-              <a
+              A new account can be created<a
                 href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home"
-                >here</a
-              >.
+                style="color: #a67351; font-weight: 800"
+                >here.</a
+              >
             </p>
             <h2 id="download-clone-fudge-repository">
               2. download/clone FUDGE-Repository
@@ -83,8 +89,11 @@
             <ul>
               <li>
                 <strong>Nodejs</strong> - needed to install FUDGE and get it
-                running. Follow the installation procedure at
-                <a href="https://nodejs.org/en">https://nodejs.org/en</a>
+                running. Follow the installation procedure at<a
+                  href="https://nodejs.org/en"
+                  style="font-weight: 800; color: #a67351"
+                  >nodejs</a
+                >
               </li>
               <li>
                 <strong>TypeScript</strong> - This is optional, but recommended
@@ -98,19 +107,54 @@
               <li>Extract the ZIP file into the desired folder.</li>
               <li>
                 Install the needed modules via
-                <code>npm install --omit=dev</code> in the terminal in the
-                folder where FUDGE is included or just run the
-                install.bat(Windows only). If the repository has been cloned,
-                you can skip the first step.
+                <p></p>
+                <div class="TerminalCode">
+                  <code>npm install --omit=dev</code>
+                  <button
+                    i
+                    class="fa fa-clone"
+                    onclick="copyToClipboard('npm install --omit=dev')"
+                  ></button>
+                </div>
+                <p></p>
+
+                in the terminal in the folder where FUDGE is included or just
+                run the install.bat(Windows only). If the repository has been
+                cloned, you can skip the first step.
               </li>
             </ul>
             <h2 id="start-editor">4. Start editor</h2>
             <p>to open the FUDGE editor now, you have the following options:</p>
             <ul>
               <li>
-                type electron <code>editor/electron</code> in the terminal
+                type electron
+                <p></p>
+                <div class="TerminalCode">
+                  <code>editor/electron</code>
+                  <button
+                    i
+                    class="fa fa-clone"
+                    onclick="copyToClipboard('editor/electron')"
+                  ></button>
+                </div>
+                <p></p>
+
+                in the terminal
               </li>
-              <li>alternatively you can use <code>npm run-script run</code></li>
+              <p></p>
+              <li>
+                alternatively you can use
+                <p></p>
+                <div class="TerminalCode">
+                  <code>npm run-script run</code>
+                  <button
+                    i
+                    class="fa fa-clone"
+                    onclick="copyToClipboard('npm run-script run')"
+                  ></button>
+                </div>
+                <p></p>
+              </li>
               <li>use the FUDGE.bat file in the folder (Windows only)</li>
             </ul>
             <h2 id="user-interface">User Interface</h2>
