@@ -12,7 +12,6 @@ body {
   color: black;
   position: static;
   display: inline-block;
-
   /* background-image: url("test2.svg"); */
 }
 
@@ -89,9 +88,11 @@ img {
   border-radius: 5px;
   float: right;
   margin-bottom: 5%;
-  border: solid 2px #884A39;
+  border: solid 5px #884a3990;
   cursor: pointer;
+
 }
+
 
 .Banner {
   height: 5em;
@@ -163,12 +164,44 @@ img {
   float: none;
   clear: both;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
-#NavBar {
+/*SideBar */
+#SideBar {
+  background-color: #a67351;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   position: fixed;
-  width: 15%;
-  height: 5px;
-  right: 0;
-  background-color: #884A39;
+  /* right: 0; */
+  border-radius: 5px;
+}
+
+#SideBar_Content {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#SideBar button {
+  width: 100%;
+  background-color: #a67351;
+  border: solid 3px black;
+  font-size: 1.5rem;
+}
+
+#SideBar li a {
+  display: block;
+  text-decoration: none;
+  color: #F9E0BB;
+  padding: 8px 16px;
+}
+
+#SideBar li a:hover {
+  background-color: #FFC26F;
+  color: #a67351;
+  border-radius: 5px;
 }

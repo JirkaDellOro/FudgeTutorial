@@ -8,23 +8,28 @@
       rel="stylesheet"
     />
     <script src="script.js"></script>
-  
   </head>
 
   <body>
-
-    
-    <!-- <div id="NavBar"></div> -->
-    <div class="overlay" onclick="closeOverlay()">
-      <img id="overlayImage" src="" alt="Enlarged Image">
+    <div id="SideBar">
+      <button onclick="sidebar_switch()">☰</button>
+      <ul id="SideBar_Content">
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#fundamentals">Fundamentals</a></li>
+        <li><a href="#build-a-graph">Build a Graph</a></li>
+        <li><a href="#coding">Coding</a></li>
+      </ul>
     </div>
-    <p>
-      <img
-        id="TutorialHeader"
-        src="Images/Tutorial_Header02.png"
-        alt="Tutorial_Header01"
-      />
-    </p>
+
+    <img
+      id="TutorialHeader"
+      src="Images/Tutorial_Header02.png"
+      alt="Tutorial_Header01"
+    />
+
+    <div class="overlay" onclick="closeOverlay()">
+      <img id="overlayImage" src="" alt="Enlarged Image" />
+    </div>
     <div id="container">
       <div id="header">
         <!-- <h1> FUDGE-Tutorial </h1> -->
@@ -290,7 +295,6 @@
           </p>
           <div class="FloatClearer"></div>
 
-          
           <h2 id="pivot">Pivot</h2>
           <p>
             <img
@@ -319,35 +323,34 @@
             <li>
               MeshCube - Generates a simple cube with edges of length 1, each
               face consisting of two trigons
-              
             </li>
-            <img class="Polygons" src="Images/Meshes/Cube.png"></img>
+            <img class="Polygons" src="Images/Meshes/Cube.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshPolygon - Generates a flat polygon. All trigons share vertex
               0, so careful design is required to create concave polygons.
               Vertex 0 is also associated with the face normal.
             </li>
-            <img class="Polygons" src="Images/Meshes/Polygon.png"></img>
+            <img class="Polygons" src="Images/Meshes/Polygon.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshExtrusion - Generates an extrusion of a polygon by a series of
               transformations
             </li>
-            <img class="Polygons" src="Images/Meshes/Extrusion.png"></img>
+            <img class="Polygons" src="Images/Meshes/Extrusion.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshPyramid - Generates a simple pyramid with edges at the base of
               length 1 and a height of 1. The sides consisting of one, the base
               of two trigons
             </li>
-            <img class="Polygons" src="Images/Meshes/Pyramid.png"></img>
+            <img class="Polygons" src="Images/Meshes/Pyramid.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshQuad - Generates a simple quad with edges of length 1, the
               face consisting of two trigons
             </li>
-            <img class="Polygons" src="Images/Meshes/Quad.png" onclick="openOverlay('Images/Meshes/Quad.png')"></img>
+            <img class="Polygons" src="Images/Meshes/Quad.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshTerrain - A terrain spreads out in the x-z-plane, y is the
@@ -362,30 +365,30 @@
               MeshRelief - Generates a planar Grid and applies a
               Heightmap-Function to it.
             </li>
-            <img class="Polygons" src="Images/Meshes/Terrain.png" onclick="openOverlay('Images/Meshes/Terrain.png')"></img>
-          <div class="FloatClearer"></div>
+            <img class="Polygons" src="Images/Meshes/Terrain.png" />
+            <div class="FloatClearer"></div>
             <li>
               MeshRotation - Generates a rotation of a polygon around the y-axis
             </li>
-            <img class="Polygons" src="Images/Meshes/Rotation.png"></img>
+            <img class="Polygons" src="Images/Meshes/Rotation.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshSphere - Generate a UV Sphere with a given number of sectors
               and stacks (clamped at 128*128)
             </li>
-            <img class="Polygons" src="Images/Meshes/Sphere.png"></img>
+            <img class="Polygons" src="Images/Meshes/Sphere.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshSprite - Generate two quads placed back to back, the one
               facing in negative Z-direction is textured reversed
             </li>
-            <img class="Polygons" src="Images/Meshes/Sprite.png"></img>
+            <img class="Polygons" src="Images/Meshes/Sprite.png" />
             <div class="FloatClearer"></div>
             <li>
               MeshTorus - Generate a Torus with a given thickness and the number
               of major- and minor segments
             </li>
-            <img class="Polygons" src="Images/Meshes/Torus.png"></img>
+            <img class="Polygons" src="Images/Meshes/Torus.png" />
             <div class="FloatClearer"></div>
           </ul>
           <h2 id="materials">Materials</h2>
@@ -414,7 +417,7 @@
               src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/b410d612-c167-4d74-a992-5b8f63e8c0be"
               alt="BildLightIcon"
             />
-            
+
             The scene needs light so that you can see the objects in the
             browser. The editor automatically turns on light when it detects
             that no light exists in the graph.
@@ -490,34 +493,34 @@
             ourselves, the script itself places an orbit camera in the scene,
             casts the graph onto the canvas element in the browser, and thus
             gives us the ability to view our project live. The following
-            keyboard shortcuts are helpful for navigating in AutoView: 
-        </p>
-            <table>
-                <tr>
-                    <td>Interaction</td>
-                    <td>Function</td>
-                </tr>
-                <tr>
-                    <td>left click</td>
-                    <td>setting the point of rotation</td>
-                </tr>
-                <tr>
-                    <td>alt + left click</td>
-                    <td>change viewing direction from point of rotation</td>
-                </tr>
-                <tr>
-                    <td>right click+mouse movement/right click(+shift)+Q/E/A/D</td>
-                    <td>change viewing direction from Camera viewpoint</td>
-                </tr>
-                <tr>
-                    <td>mouse wheel/right click+W/S</td>
-                    <td>zoom in/out</td>
-                </tr>
-                <tr>
-                    <td>alt + right click + mousemovement</td>
-                    <td>zoom in/out</td>
-                </tr>
-            </table>
+            keyboard shortcuts are helpful for navigating in AutoView:
+          </p>
+          <table>
+            <tr>
+              <td>Interaction</td>
+              <td>Function</td>
+            </tr>
+            <tr>
+              <td>left click</td>
+              <td>setting the point of rotation</td>
+            </tr>
+            <tr>
+              <td>alt + left click</td>
+              <td>change viewing direction from point of rotation</td>
+            </tr>
+            <tr>
+              <td>right click+mouse movement/right click(+shift)+Q/E/A/D</td>
+              <td>change viewing direction from Camera viewpoint</td>
+            </tr>
+            <tr>
+              <td>mouse wheel/right click+W/S</td>
+              <td>zoom in/out</td>
+            </tr>
+            <tr>
+              <td>alt + right click + mousemovement</td>
+              <td>zoom in/out</td>
+            </tr>
+          </table>
           <h3 id="structure-autoview-script">Structure autoview script</h3>
           <p>
             The script only serves as a kind of &quot;startup&quot;. It displays
@@ -569,7 +572,9 @@
             the CustomComponentScript for later. Let&#39;s have a look at
             Main.ts first.
           </p>
-          <pre><code><span class="hljs-keyword">namespace</span> Script {
+          <div class="FloatClearer"></div>
+
+          <pre><code ><span class="hljs-keyword">namespace</span> Script {
   <span class="hljs-meta"><span class="hljs-meta-keyword">import</span> ƒ = FudgeCore;</span>
   ƒ.Debug.info(<span class="hljs-string">"Main Program Template running!"</span>);
 
