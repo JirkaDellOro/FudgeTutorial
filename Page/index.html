@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="prism.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="script.js"></script>
+    <script src="prism.js"></script>
   </head>
 
   <body>
@@ -108,13 +110,8 @@
               <li>
                 Install the needed modules via
                 <p></p>
-                <div class="TerminalCode">
-                  <code>npm install --omit=dev</code>
-                  <button
-                    i
-                    class="fa fa-clone"
-                    onclick="copyToClipboard('npm install --omit=dev')"
-                  ></button>
+                <div>
+                  <pre><code class="language-batch">npm install --omit=dev</code></pre>
                 </div>
                 <p></p>
 
@@ -129,13 +126,8 @@
               <li>
                 type electron
                 <p></p>
-                <div class="TerminalCode">
-                  <code>editor/electron</code>
-                  <button
-                    i
-                    class="fa fa-clone"
-                    onclick="copyToClipboard('editor/electron')"
-                  ></button>
+                <div>
+                  <pre><code class="language-batch">editor/electron</code></pre>
                 </div>
                 <p></p>
 
@@ -145,13 +137,8 @@
               <li>
                 alternatively you can use
                 <p></p>
-                <div class="TerminalCode">
-                  <code>npm run-script run</code>
-                  <button
-                    i
-                    class="fa fa-clone"
-                    onclick="copyToClipboard('npm run-script run')"
-                  ></button>
+                <div>
+                  <pre><code class="language-batch">npm run-script run</code></pre>
                 </div>
                 <p></p>
               </li>
@@ -214,7 +201,14 @@
           </p>
 
           <div class="FloatClearer"></div>
+          <pre><code class="language-markup"> 
+&lt;!-- &lt;tlink type="text/css" rel="stylesheet" href="../Themes/LightGray/Colors.css" /> -->
+&lt;!-- &lt;link type="text/css" rel="stylesheet" href="../Themes/DarkGray/Colors.css" /> -->
+&ltlink type="text/css" rel="stylesheet" href="../Themes/Black/Colors.css" />
+&lt!-- &ltlink type="text/css" rel="stylesheet" href="../Themes/Espresso/Colors.css" /> --></code>
+          </pre>
 
+          <p></p>
           <p>
             <img
               src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/1bf8168c-844e-48e5-a252-62faa63ac8ea"
@@ -302,7 +296,11 @@
             they relate to each other. Here you can see the graph, mesh and
             material you created in the previous step.
           </p>
+
           <div class="FloatClearer"></div>
+          <pre><code class="language-json"></code>Internal.json
+            // insert internal-json here
+          </pre>
 
           <p>
             For now, the resources are just there. Throughout the tutorial, the
@@ -365,10 +363,11 @@
           </p>
           <ul>
             <li>
-              MeshCube - Generates a simple cube with edges of length 1, each
-              face consisting of two trigons
+              MeshCube <img class="Polygons" src="Images/Meshes/Cube.png" />-
+              Generates a simple cube with edges of length 1, each face
+              consisting of two trigons
             </li>
-            <img class="Polygons" src="Images/Meshes/Cube.png" />
+
             <div class="FloatClearer"></div>
             <li>
               MeshPolygon - Generates a flat polygon. All trigons share vertex
@@ -618,7 +617,7 @@
           </p>
           <div class="FloatClearer"></div>
 
-          <pre><code ><span class="hljs-keyword">namespace</span> Script {
+          <pre><code class="language-typescript" ><span class="hljs-keyword">namespace</span> Script {
   <span class="hljs-meta"><span class="hljs-meta-keyword">import</span> ƒ = FudgeCore;</span>
   ƒ.Debug.info(<span class="hljs-string">"Main Program Template running!"</span>);
 
@@ -629,7 +628,8 @@
     viewport = _event.detail;
 
     ƒ.Loop.addEventListener(ƒ.EVENT.LOOP_FRAME, update);
-    <span class="hljs-comment">// ƒ.Loop.start();  // start the game loop to continously draw the viewport, update the audiosystem and drive the physics i/a</span>
+    <span class="hljs-comment">/* ƒ.Loop.start();   start the game loop to continously draw the viewport,
+      update the audiosystem and drive the physics i/a</span> */
   }
 
   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span><span class="hljs-params">(_event: Event)</span>: void </span>{
@@ -639,6 +639,8 @@
   }
 }
 </code></pre>
+
+          <p></p>
           <p>
             For now, there is not much in it. How to work with Loop/Update will
             be explained in the following chapters. Let&#39;s first see that we
