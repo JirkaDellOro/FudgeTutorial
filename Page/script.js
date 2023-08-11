@@ -1,14 +1,14 @@
 
-window.onload = function () {
-  var controller = new ScrollMagic.Controller();
+// window.onload = function () {
+//   var controller = new ScrollMagic.Controller();
 
-  var ourScene = new ScrollMagic.Scene({
-    triggerElement: "#create-a-github-account",
-    })
-    .setPin("#sidenav")
-    // .addIndicators()
-    .addTo(controller);
-};
+//   var ourScene = new ScrollMagic.Scene({
+//     triggerElement: "#create-a-github-account",
+//     })
+//     .setPin("#sidenav")
+//     // .addIndicators()
+//     .addTo(controller);
+// };
 
 //sidebar
 function sidebar_switch() {

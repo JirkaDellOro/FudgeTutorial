@@ -126,7 +126,7 @@ img {
 
 .FudgeText {
   color: #C38154;
-  
+
 }
 
 
@@ -163,40 +163,37 @@ img {
 #TutorialHeader {
   /* border: solid 5px red; */
   max-width: 100%;
-  width: 200% !important;
-  float: none;
-  clear: both;
+  /* width: 200% !important; */
   border: none;
+  border-radius: 0px;
   padding: 0;
-  margin: 0;
+  margin-right: 200px;
 }
 
 
 
 
-#sidenav{
+#sidenav {
   width: 200px;
   height: 100%;
   position: fixed;
-  background-color: #c5c5c554 ;
+  background-color: #dcdcdc6c;
   right: 0;
-  border-radius: 10px;
   z-index: 3;
-  color: #000000!important;
+  color: #000000 !important;
 }
 
 
-#wrapper{
+#wrapper {
   margin-right: 210px;
-  margin-left:100px;
+  margin-left: 100px;
 }
 
-.btn-success{
-  background-color: #a67351!important;
-  border: solid black 1px!important;
+.btn-success {
+  background-color: #a67351 !important;
+  border: solid black 1px !important;
 }
 
-.btn-success:hover{
-  background-color: #FFC26F!important;
+.btn-success:hover {
+  background-color: #FFC26F !important;
 }
-
