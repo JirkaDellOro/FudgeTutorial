@@ -1,33 +1,76 @@
 <html>
   <head>
     <link rel="stylesheet" href="stylesheet.css" />
+    <!--Prismjs-->
     <link rel="stylesheet" href="prism.css" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
     <script src="script.js"></script>
     <script src="prism.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <title>FUDGE Tutorial</title>
   </head>
 
   <body>
-    <div id="SideBar">
-      <button
-        class="fa fa-bars"
-        aria-hidden="true"
-        onclick="sidebar_switch()"
-      ></button>
-      <ul id="SideBar_Content">
-        <li><a href="#getting-started">Getting Started</a></li>
-        <li><a href="#fundamentals">Fundamentals</a></li>
-        <li><a href="#build-a-graph">Build a Graph</a></li>
-        <li><a href="#coding">Coding</a></li>
-      </ul>
+    <div id="sidenav" style="margin-top: 400px">
+      <div class="p-2" style="margin-top: 20px">
+        <h2 class="fs-2 text-center">TUTORIAL</h2>
+        <hr class="text-white" />
+        <ul class="nav fs-5">
+          <li class="nav-item">
+            <a
+              class="nav-link text-body-emphasis text-nowrap"
+              href="#getting-started"
+              >Getting started</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-body-emphasis text-nowrap"
+              href="#fundamentals"
+              >Fundamentals</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link text-body-emphasis text-nowrap"
+              href="#build-a-graph"
+              >Build a graph</a
+            >
+          </li>
+          <li>
+            <a class="nav-link text-body-emphasis text-nowrap" href="#coding"
+              >Coding</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-
     <img
       id="TutorialHeader"
       src="Images/Tutorial_Header02.png"
@@ -41,19 +84,30 @@
       <div id="header">
         <!-- <h1> FUDGE-Tutorial </h1> -->
       </div>
+
       <div id="wrapper">
         <div>
-          <h2>
-            Welcome to the <span class="FudgeText">Fudge</span>Tutorial.
-
-            <p class="Spacer"></p>
-
-            Here you can learn how FUDGE is built and how to work with its
-            functionalities.
-          </h2>
-
+          <div id="welcome">
+            <h2>
+              Welcome to the <span class="FudgeText">Fudge</span>Tutorial.
+              <br />
+              <p></p>
+              Here you can learn how FUDGE is built and how to work with its
+              functionalities.
+            </h2>
+            <p></p>
+            <br />
+          </div>
+          <a
+            class="btn btn-success float-end"
+            href="https://github.com/JirkaDellOro/FUDGE"
+            target="_blank"
+          >
+            <i class="fa fa-github fa-2x pull-left"></i> FUDGE repository
+          </a>
           <div class="Content">
             <h1 id="getting-started">Getting started</h1>
+
             <div class="Line"></div>
             <p>
               First of all, you need to set up the working environment. Here we
@@ -61,6 +115,7 @@
               environment and get the first glimpse of the FUDGE editor.
             </p>
             <h2 id="create-a-github-account">1. create a GitHub account</h2>
+            <hr />
             <p>
               this is optional, as you will be able to download the repository
               locally even without an account. Note, however, that upcoming
@@ -77,31 +132,41 @@
             <h2 id="download-clone-fudge-repository">
               2. download/clone FUDGE-Repository
             </h2>
+            <hr />
             <p>
               Open the FUDGE repository via Code -&gt; Clone or via GitHub
               Desktop and clone the repository. As mentioned earlier, you can
               simply download the repository as a ZIP locally to your working
               environment.
             </p>
+
             <h2 id="install-fudge">3. install FUDGE</h2>
+            <hr />
             <p>
               In order to install FUDGE, you need to make sure that you have the
               following installed in addition to the local files:
             </p>
             <ul>
-              <li>
-                <strong>Nodejs</strong> - needed to install FUDGE and get it
-                running. Follow the installation procedure at<a
+              <li style="margin-bottom: 50px">
+                <a
+                  class="btn btn-success btn-md float-end"
                   href="https://nodejs.org/en"
-                  style="font-weight: 800; color: #a67351"
-                  >nodejs</a
+                  target="_blank"
+                  ><i class="fa fa-code fa-1x pull left"></i> download nodejs</a
                 >
+                <strong>Nodejs</strong> - needed to install FUDGE and get it
+                running.
+                <p></p>
               </li>
               <li>
                 <strong>TypeScript</strong> - This is optional, but recommended
                 to write custom scripts in FUDGE. To install TypeScript
-                globally, type npm install -g typescript in the terminal.
-                Alternatively, you can use JavaScript to write the scripts.
+                globally, type
+                <div>
+                  <pre><code class="language-batch">npm install -g typescript</code></pre>
+                </div>
+                in the terminal. Alternatively, you can use JavaScript to write
+                the scripts.
               </li>
             </ul>
             <p>Once this is done, follow the steps below:</p>
@@ -121,6 +186,7 @@
               </li>
             </ul>
             <h2 id="start-editor">4. Start editor</h2>
+            <hr />
             <p>to open the FUDGE editor now, you have the following options:</p>
             <ul>
               <li>
@@ -145,6 +211,7 @@
               <li>use the FUDGE.bat file in the folder (Windows only)</li>
             </ul>
             <h2 id="user-interface">User Interface</h2>
+            <hr />
             <img
               src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/106c0813-64b7-4913-b643-1c35768cd912"
               alt="BildEditorEmptyScaled"
@@ -166,6 +233,7 @@
             call for help in Discord in the game lab.
           </p>
           <h2 id="creating-a-new-project">Creating a new project</h2>
+          <hr />
           <p>
             To start a new project in FUDGE, go to Project - New , and select
             the folder of your choice. The editor will create all the data you
@@ -173,6 +241,7 @@
             made to the project.
           </p>
           <h2 id="overview-editor">Overview Editor</h2>
+          <hr />
           <img
             src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/bb2671fb-e08a-476c-b042-f707c5a9d483"
             alt="BildEditorAufbauExampleScaled"
@@ -209,19 +278,19 @@
           </pre>
 
           <p></p>
-          <p>
-            <img
-              src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/1bf8168c-844e-48e5-a252-62faa63ac8ea"
-              alt="BildChangeBrowserConsoleSettings"
-            />
-          </p>
-          <p>
+
+          <div class="alert alert-danger float-start">
             <span style="color: red; font-size: 1.8rem">Important!</span> In
             order to detect and monitor errors at an early stage, it is
             advisable to always have the browser console open in the editor as
             well as in the Internet browser. You can also expand the messages of
             Fudge by expanding the messages in the browser console.
-          </p>
+            <img
+              src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/1bf8168c-844e-48e5-a252-62faa63ac8ea"
+              alt="BildChangeBrowserConsoleSettings"
+            />
+          </div>
+
           <div class="FloatClearer"></div>
 
           <h2 id="overview-folder-structure">Overview folder structure</h2>
