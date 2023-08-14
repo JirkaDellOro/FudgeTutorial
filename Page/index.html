@@ -78,20 +78,24 @@
         </ul>
       </div>
     </div>
-    <img
-      id="TutorialHeader"
-      src="Images/Tutorial_Header02.png"
-      alt="Tutorial_Header01"
-    />
+    <div class="container">
+      <div class="row">
+        <img
+          class="img-fluid"
+          id="TutorialHeader"
+          src="Images/Tutorial_Header02.png"
+          alt="Tutorial_Header01"
+        />
+
+      </div>
+    </div>
+    <div class="FloatClearer"></div>
 
     <div class="overlay" onclick="closeOverlay()">
       <img id="overlayImage" src="" alt="Enlarged Image" />
     </div>
     <div id="container">
-      <div id="header">
-        <!-- <h1> FUDGE-Tutorial </h1> -->
-      </div>
-
+   
       <div id="wrapper">
         <div>
           <div id="welcome">
@@ -110,6 +114,7 @@
             href="https://github.com/JirkaDellOro/FUDGE"
             target="_blank"
           >
+
             <i class="fa fa-github fa-2x pull-left"></i> FUDGE repository
           </a>
           <div class="Content">
@@ -456,8 +461,8 @@
               MeshExtrusion - Generates an extrusion of a polygon by a series of
               transformations
             </li>
-            <img class="Polygons" src="Images/Meshes/Extrusion.png" />
             <div class="FloatClearer"></div>
+            <img class="Polygons" src="Images/Meshes/Extrusion.png" />
             <li>
               MeshPyramid - Generates a simple pyramid with edges at the base of
               length 1 and a height of 1. The sides consisting of one, the base
