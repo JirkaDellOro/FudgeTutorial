@@ -1,5 +1,3 @@
-
-
 //sidebar
 function sidebar_switch() {
   let style = document.getElementById("SideBar_Content").style;
@@ -41,3 +39,18 @@ window.addEventListener("load", function () {
     polys[i].onclick = () => openOverlay(polys[i].src);
   }
 });
+
+function openSideBar() {
+  var sidebar = document.getElementById("sidenav").style;
+  sidebar.width = "200px";
+  document.getElementById("wrapper").style.marginLeft = "250";
+  document.getElementById("navButton").style.marginLeft = "200";
+}
+
+function closeSideBar() {
+  var sidebar = document.getElementById("sidenav").style;
+  sidebar.width = "0";
+  document.getElementById("wrapper").style.marginLeft = "250";
+  document.getElementById("wrapper").style.marginLeft = null;
+  document.getElementById("navButton").style.marginLeft = "0";
+}

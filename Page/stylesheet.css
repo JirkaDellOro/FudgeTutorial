@@ -75,13 +75,12 @@ div#extra {
 
 
 img {
-  max-width: 30%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
-  float: right;
-  margin-bottom: 5%;
+  margin-bottom: 50px;
   border: solid 2px #884A39;
   cursor: pointer;
-
 }
 
 
@@ -117,10 +116,9 @@ img {
 }
 
 
-.overlay img {
+#overlayImage {
   max-width: 100%;
-  max-height: 100%;
-  border: none;
+  height: auto;
 }
 
 .overlay {
@@ -139,7 +137,6 @@ img {
 
 .Polygons {
   width: 10%;
-  float: left;
   border: none;
   margin-left: 100px;
   margin-top: 1%;
@@ -160,20 +157,49 @@ img {
 
 
 
-#sidenav {
-  width: 200px;
+.sidebar {
+  color: #000000 !important;
+  z-index: 3;
+  display: block;
+  width: 0px;
   height: 100%;
   position: fixed;
   background-color: #dcdcdc6c;
-  right: 0;
-  z-index: 3;
-  color: #000000 !important;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+  overflow-x: hidden;
 }
 
+.sidebar a {
+  transition: 0.2s;
+}
 
 #wrapper {
-  margin-right: 210px;
-  margin-left: 100px;
+  margin-right: 250px;
+  margin-left: 250px;
+  transition: margin-left .5s;
+  padding: 25px;
+}
+
+@media screen and (max-height: 650px) {
+  #wrapper {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .sidebar {
+    font-size: 16px;
+  }
+}
+
+#navButton {
+  position: fixed;
+  left: 0px;
+  transition: margin-left .5s;
+  border: none;
+  color: #000000;
+background-color: #dcdcdc6c;
 }
 
 .btn-success {

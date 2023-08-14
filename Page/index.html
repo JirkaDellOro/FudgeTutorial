@@ -37,8 +37,19 @@
   </head>
 
   <body>
-    <div id="sidenav">
-      <div class="p-2" style="margin-top: 20px">
+    <button id="navButton" onclick="openSideBar()">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </button>
+    <div class="sidebar" id="sidenav">
+      <a
+        class="float-end"
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeSideBar()"
+        style="color: black"
+        ><i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </a>
+      <nav class="p-2" role="navigation" style="margin-top: 20px">
         <h2 class="fs-2 text-center" style="font-weight: 800">ABSTRACT</h2>
         <hr class="text-white" />
         <ul class="nav nav-pills nav-stacked fs-5">
@@ -76,26 +87,24 @@
             </ul>
           </li>
         </ul>
+      </nav>
+    </div>
+    <div>
+      <div class="overlay" onclick="closeOverlay()">
+        <img class="img-fluid" id="overlayImage" src="" alt="Enlarged Image" />
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <img
-          class="img-fluid"
-          id="TutorialHeader"
-          src="Images/Tutorial_Header02.png"
-          alt="Tutorial_Header01"
-        />
-
+      <div id="container">
+        <div class="row">
+          <img
+            class="mx-auto d-block"
+            id="TutorialHeader"
+            src="Images/Tutorial_Header02.png"
+            alt="Tutorial_Header01"
+          />
+        </div>
       </div>
-    </div>
-    <div class="FloatClearer"></div>
+      <div class="FloatClearer"></div>
 
-    <div class="overlay" onclick="closeOverlay()">
-      <img id="overlayImage" src="" alt="Enlarged Image" />
-    </div>
-    <div id="container">
-   
       <div id="wrapper">
         <div>
           <div id="welcome">
@@ -114,7 +123,6 @@
             href="https://github.com/JirkaDellOro/FUDGE"
             target="_blank"
           >
-
             <i class="fa fa-github fa-2x pull-left"></i> FUDGE repository
           </a>
           <div class="Content">
@@ -224,14 +232,14 @@
             </ul>
             <h2 id="user-interface">User Interface</h2>
             <hr />
-            <img
-              src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/106c0813-64b7-4913-b643-1c35768cd912"
-              alt="BildEditorEmptyScaled"
-            />
             <p>
               If the installation was completed successfully, you will now see
               an empty window with a browser console.
             </p>
+            <img class="mx-auto d-block"
+              src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/106c0813-64b7-4913-b643-1c35768cd912"
+              alt="BildEditorEmptyScaled"
+            />
           </div>
           <div class="FloatClearer"></div>
 
