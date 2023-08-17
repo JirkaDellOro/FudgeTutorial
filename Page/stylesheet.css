@@ -10,7 +10,6 @@ body {
   background-color: white;
   color: black;
   position: static;
-  display: block;
 }
 
 p {
@@ -136,9 +135,8 @@ img {
 }
 
 .Polygons {
-  width: 10%;
+  width: 100%;
   border: none;
-  margin-left: 100px;
   margin-top: 1%;
   margin-bottom: 2%;
 }
@@ -151,7 +149,7 @@ img {
   border-radius: 0px;
   margin-right: 200px;
   margin-left: auto;
-  display: block;
+  display: contents;
 }
 
 
@@ -180,16 +178,25 @@ img {
   margin-left: 250px;
   transition: margin-left .5s;
   padding: 25px;
+  display: block;
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-width: 1000px) {
   #wrapper {
     margin-right: 0px;
     margin-left: 0px;
   }
 
   .sidebar {
-    font-size: 16px;
+    font-size: 24px;
+  }
+
+  .nav .btn { 
+    font-size: 18px;
+  }
+
+  #navButton {
+    font-size: 24px;
   }
 }
 
@@ -199,7 +206,8 @@ img {
   transition: margin-left .5s;
   border: none;
   color: #000000;
-background-color: #dcdcdc6c;
+  background-color: #dcdcdc6c;
+  z-index: 4;
 }
 
 .btn-success {

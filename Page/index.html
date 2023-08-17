@@ -33,6 +33,8 @@
 
     <script src="scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
+    <link rel="icon" href="Images/favicon.png" />
     <title>FUDGE Tutorial</title>
   </head>
 
@@ -82,7 +84,14 @@
                 >
               </li>
               <li>
-                <a class="nav-item btn btn-sm" href="#coding">coding</a>
+                <a
+                  class="nav-item btn btn-sm"
+                  href="#meshes-and-their-parameters"
+                  >Meshes</a
+                >
+              </li>
+              <li>
+                <a class="nav-item btn btn-sm" href="#coding">Coding</a>
               </li>
             </ul>
           </li>
@@ -236,7 +245,8 @@
               If the installation was completed successfully, you will now see
               an empty window with a browser console.
             </p>
-            <img class="mx-auto d-block"
+            <img
+              class="mx-auto d-block"
               src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/106c0813-64b7-4913-b643-1c35768cd912"
               alt="BildEditorEmptyScaled"
             />
@@ -450,79 +460,147 @@
           <p>
             FUDGE offers you several meshes that you can use for your project.
           </p>
-          <ul>
-            <li>
-              MeshCube <img class="Polygons" src="Images/Meshes/Cube.png" />-
-              Generates a simple cube with edges of length 1, each face
-              consisting of two trigons
-            </li>
+          <table class="table table-light">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Mesh</th>
+                <th scope="col">Picture</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1.</th>
+                <th scope="row">Cube</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Cube.png" />
+                </th>
+                <th scope="row">
+                  Generates a simple cube with edges of length 1, each face
+                  consisting of two trigons.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">2.</th>
+                <th scope="row">Polygon</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Polygon.png" />
+                </th>
+                <th scope="row">
+                  Generates a flat polygon. All trigons share vertex 0, so
+                  careful design is required to create concave polygons. Vertex
+                  0 is also associated with the face normal.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">3.</th>
+                <th scope="row">MeshExtrusion</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Extrusion.png" />
+                </th>
+                <th scope="row">
+                  Generates an extrusion of a polygon by a series of
+                  transformations.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">4.</th>
+                <th scope="row">MeshPyramid</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Pyramid.png" />
+                </th>
+                <th scope="row">
+                  Generates a simple pyramid with edges at the base of length 1
+                  and a height of 1. The sides consisting of one, the base of
+                  two trigons.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">5.</th>
+                <th scope="row">MeshQuad</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Quad.png" />
+                </th>
+                <th scope="row">
+                  Generates a simple quad with edges of length 1, the face
+                  consisting of two trigons
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">6.</th>
+                <th scope="row">MeshTerrain</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Terrain.png" />
+                </th>
+                <th scope="row">
+                  A terrain spreads out in the x-z-plane, y is the height
+                  derived from the heightmap function. The terrain is always 1
+                  in size in all dimensions,fitting into the unit-cube.
+                  Resolution determines the number of quads in x and z
+                  dimension, scale the factor applied to the x,z-coordinates
+                  passed to the heightmap function. Standard function is the
+                  simplex noise implemented with FUDGE, but another function can
+                  be given.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">7.</th>
+                <th scope="row">MeshRelief</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Terrain.png" />
+                </th>
+                <th scope="row">
+                  Generates a planar Grid and applies a Heightmap-Function to
+                  it.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">8.</th>
+                <th scope="row">MeshRotation</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Rotation.png" />
+                </th>
+                <th scope="row">
+                  Generates a rotation of a polygon around the y-axis
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">9.</th>
+                <th scope="row">MeshSphere</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Sphere.png" />
+                </th>
+                <th scope="row">
+                  Generate a UV Sphere with a given number of sectors and stacks
+                  (clamped at 128*128)
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">10.</th>
+                <th scope="row">MeshSprite</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Sprite.png" />
+                </th>
+                <th scope="row">
+                  Generate two quads placed back to back, the one facing in
+                  negative Z-direction is textured reversed
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">11.</th>
+                <th scope="row">MeshTorus</th>
+                <th scope="row">
+                  <img class="Polygons" src="Images/Meshes/Torus.png" />
+                </th>
+                <th scope="row">
+                  Generate a Torus with a given thickness and the number of
+                  major- and minor segments
+                </th>
+              </tr>
+            </tbody>
+          </table>
 
-            <div class="FloatClearer"></div>
-            <li>
-              MeshPolygon - Generates a flat polygon. All trigons share vertex
-              0, so careful design is required to create concave polygons.
-              Vertex 0 is also associated with the face normal.
-            </li>
-            <img class="Polygons" src="Images/Meshes/Polygon.png" />
-            <div class="FloatClearer"></div>
-            <li>
-              MeshExtrusion - Generates an extrusion of a polygon by a series of
-              transformations
-            </li>
-            <div class="FloatClearer"></div>
-            <img class="Polygons" src="Images/Meshes/Extrusion.png" />
-            <li>
-              MeshPyramid - Generates a simple pyramid with edges at the base of
-              length 1 and a height of 1. The sides consisting of one, the base
-              of two trigons
-            </li>
-            <img class="Polygons" src="Images/Meshes/Pyramid.png" />
-            <div class="FloatClearer"></div>
-            <li>
-              MeshQuad - Generates a simple quad with edges of length 1, the
-              face consisting of two trigons
-            </li>
-            <img class="Polygons" src="Images/Meshes/Quad.png" />
-            <div class="FloatClearer"></div>
-            <li>
-              MeshTerrain - A terrain spreads out in the x-z-plane, y is the
-              height derived from the heightmap function. The terrain is always
-              1 in size in all dimensions,fitting into the unit-cube. Resolution
-              determines the number of quads in x and z dimension, scale the
-              factor applied to the x,z-coordinates passed to the heightmap
-              function. Standard function is the simplex noise implemented with
-              FUDGE, but another function can be given.
-            </li>
-            <li>
-              MeshRelief - Generates a planar Grid and applies a
-              Heightmap-Function to it.
-            </li>
-            <img class="Polygons" src="Images/Meshes/Terrain.png" />
-            <div class="FloatClearer"></div>
-            <li>
-              MeshRotation - Generates a rotation of a polygon around the y-axis
-            </li>
-            <img class="Polygons" src="Images/Meshes/Rotation.png" />
-            <div class="FloatClearer"></div>
-            <li>
-              MeshSphere - Generate a UV Sphere with a given number of sectors
-              and stacks (clamped at 128*128)
-            </li>
-            <img class="Polygons" src="Images/Meshes/Sphere.png" />
-            <div class="FloatClearer"></div>
-            <li>
-              MeshSprite - Generate two quads placed back to back, the one
-              facing in negative Z-direction is textured reversed
-            </li>
-            <img class="Polygons" src="Images/Meshes/Sprite.png" />
-            <div class="FloatClearer"></div>
-            <li>
-              MeshTorus - Generate a Torus with a given thickness and the number
-              of major- and minor segments
-            </li>
-            <img class="Polygons" src="Images/Meshes/Torus.png" />
-            <div class="FloatClearer"></div>
-          </ul>
           <h2 id="materials">Materials</h2>
           <p>
             Shaders realize surface properties of the 3D object, such as gloss
