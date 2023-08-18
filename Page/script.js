@@ -43,14 +43,35 @@ window.addEventListener("load", function () {
 function openSideBar() {
   var sidebar = document.getElementById("sidenav").style;
   sidebar.width = "200px";
-  document.getElementById("wrapper").style.marginLeft = "250";
+  var wr = document.getElementById("wrapper");
+  wr.style.marginLeft = "250";
   document.getElementById("navButton").style.marginLeft = "200";
+  console.log(wr.style.marginLeft);
 }
 
 function closeSideBar() {
-  var sidebar = document.getElementById("sidenav").style;
+  var sidebar = window.document.getElementById("sidenav").style;
   sidebar.width = "0";
   document.getElementById("wrapper").style.marginLeft = "250";
   document.getElementById("wrapper").style.marginLeft = null;
   document.getElementById("navButton").style.marginLeft = "0";
 }
+var body = $(window).height();
+
+$(window).on("resize", function () {
+  body = $(window).height();
+  console.log(body);
+});
+
+var controller = new ScrollMagic.Controller();
+$(function () {
+  // wait for document ready
+  // build scene
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#sticky",
+    triggerHook: 0
+  })
+    .setPin("#sticky")
+    // .addIndicators({ name: "2 (duration: 0)" }) // add indicators (requires plugin)
+    .addTo(controller);
+});
