@@ -57,31 +57,30 @@
   <body>
     <div>
       <div class="overlay" onclick="closeOverlay()">
-        <img class="img-fluid" id="overlayImage" src="" alt="Enlarged Image" />
+        <img class="" id="overlayImage" src="" alt="Enlarged Image" />
       </div>
-      <div id="container">
-        <div class="row">
-          <img
-            class="mx-auto d-block"
-            id="TutorialHeader"
-            src="Images/Tutorial_Header02.png"
-            alt="Tutorial_Header01"
-          />
-        </div>
+
+      <div class="container" id="headerGradient">
+        <img
+          class="img-fluid"
+          id="logo"
+          src="Images/FudgeLogo.png"
+          alt="Logo"
+        />
       </div>
-      <div class="FloatClearer"></div>
 
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="sticky">
-        <a class="navbar-brand" href="#"
-          ><img
+      <nav class="navbar navbar-expand-lg" id="sticky">
+        <a class="navbar-brand" href="#">
+          <!-- <img
             class="d-inline-block align-top"
             id="brand"
-            src="Images/favicon.png"
-            height="40px"
-            width="40px"
+            style="border: none !important"
+            src="Images/ƒ.png"
+            height="20px"
+            width="20px"
             alt=""
-          />
+          /> -->
           TUTORIAL</a
         >
         <button
@@ -93,7 +92,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"
+            ><i class="fa fa-bars" aria-hidden="true"></i>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -123,26 +124,34 @@
         </div>
       </nav>
 
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
       <div id="wrapper">
+        <h1>
+          Welcome to the <span class="FudgeText">Fudge</span>Tutorial.
+          <br />
+          <p></p>
+          Here you can learn how FUDGE is built and how to work with its
+          functionalities.
+        </h1>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <a
+          class="btn btn-success float-right"
+          href="https://github.com/JirkaDellOro/FUDGE"
+          target="_blank"
+        >
+          <i class="fa fa-github fa-2x pull-left"></i> FUDGE repository
+        </a>
+        <br />
         <div>
-          <div id="welcome">
-            <h2>
-              Welcome to the <span class="FudgeText">Fudge</span>Tutorial.
-              <br />
-              <p></p>
-              Here you can learn how FUDGE is built and how to work with its
-              functionalities.
-            </h2>
-            <p></p>
-            <br />
-          </div>
-          <a
-            class="btn btn-success float-end"
-            href="https://github.com/JirkaDellOro/FUDGE"
-            target="_blank"
-          >
-            <i class="fa fa-github fa-2x pull-left"></i> FUDGE repository
-          </a>
           <div class="Content">
             <h1 id="getting-started">Getting started</h1>
 
@@ -153,7 +162,7 @@
               environment and get the first glimpse of the FUDGE editor.
             </p>
             <h2 id="create-a-github-account">1. create a GitHub account</h2>
-            <hr />
+            <br />
             <p>
               this is optional, as you will be able to download the repository
               locally even without an account. Note, however, that upcoming
@@ -170,7 +179,7 @@
             <h2 id="download-clone-fudge-repository">
               2. download/clone FUDGE-Repository
             </h2>
-            <hr />
+            <br />
             <p>
               Open the FUDGE repository via Code -&gt; Clone or via GitHub
               Desktop and clone the repository. As mentioned earlier, you can
@@ -179,7 +188,7 @@
             </p>
 
             <h2 id="install-fudge">3. install FUDGE</h2>
-            <hr />
+            <br />
             <p>
               In order to install FUDGE, you need to make sure that you have the
               following installed in addition to the local files:
@@ -187,44 +196,52 @@
             <ul>
               <li style="margin-bottom: 50px">
                 <a
-                  class="btn btn-success btn-md float-end"
+                  class="btn btn-success btn-md float-right"
                   href="https://nodejs.org/en"
                   target="_blank"
                   ><i class="fa fa-code fa-1x pull left"></i> download nodejs</a
                 >
                 <strong>Nodejs</strong> - needed to install FUDGE and get it
                 running.
-                <p></p>
               </li>
+              <br />
               <li>
                 <strong>TypeScript</strong> - This is optional, but recommended
                 to write custom scripts in FUDGE. To install TypeScript
                 globally, type
+                <br />
+                <br />
+
                 <div>
                   <pre><code class="language-batch">npm install -g typescript</code></pre>
                 </div>
+                <br />
+
                 in the terminal. Alternatively, you can use JavaScript to write
                 the scripts.
               </li>
             </ul>
+            <br />
             <p>Once this is done, follow the steps below:</p>
             <ul>
               <li>Extract the ZIP file into the desired folder.</li>
+              <br />
               <li>
                 Install the needed modules via
-                <p></p>
                 <div>
+                  <br />
                   <pre><code class="language-batch">npm install --omit=dev</code></pre>
                 </div>
-                <p></p>
 
                 in the terminal in the folder where FUDGE is included or just
                 run the install.bat(Windows only). If the repository has been
                 cloned, you can skip the first step.
               </li>
             </ul>
+            <br />
             <h2 id="start-editor">4. Start editor</h2>
-            <hr />
+            <br />
+
             <p>to open the FUDGE editor now, you have the following options:</p>
             <ul>
               <li>
@@ -249,18 +266,17 @@
               <li>use the FUDGE.bat file in the folder (Windows only)</li>
             </ul>
             <h2 id="user-interface">User Interface</h2>
-            <hr />
+
             <p>
               If the installation was completed successfully, you will now see
               an empty window with a browser console.
             </p>
             <img
               class="mx-auto d-block"
-              src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/106c0813-64b7-4913-b643-1c35768cd912"
+              src="Images/Screenshots/User Interface.png"
               alt="BildEditorEmptyScaled"
             />
           </div>
-          <div class="FloatClearer"></div>
         </div>
         <div id="extra"></div>
         <div id="footer"></div>

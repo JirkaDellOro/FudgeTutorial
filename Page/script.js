@@ -33,7 +33,8 @@ function closeOverlay() {
 window.addEventListener("load", function () {
   let polys = this.document.getElementsByTagName("img");
   for (let i = 0; i < polys.length; i++) {
-    if (i == 0 || i == 1) {
+    if (polys[i].id =="logo") {
+      console.log(polys[i].id)
       continue;
     }
     polys[i].onclick = () => openOverlay(polys[i].src);

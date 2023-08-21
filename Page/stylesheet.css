@@ -15,6 +15,7 @@ body {
   background-color: white;
   color: black;
   position: static;
+  font-size: 20px !important;
 }
 
 
@@ -47,21 +48,17 @@ div#footer p {
 }
 
 
-
-
 div#extra {
   clear: both;
   width: 100%;
 }
-
-
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 50px;
-  border: solid 2px #884A39;
+  border: solid 5px #55433b !important;
   cursor: pointer;
 }
 
@@ -70,9 +67,24 @@ img {
   border: none;
 }
 
+#sticky {
+  background-color: #663017;
+  z-index: 99999;
+}
+
+#sticky .nav-link,
+#sticky .navbar-brand {
+  color: white;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+
 .active {
-background: #b7b7b78a;
-border-radius: 5px;
+  background: #b7b7b78a;
+  border-radius: 5px;
 }
 
 .Banner {
@@ -82,11 +94,17 @@ border-radius: 5px;
 .Line {
   width: 100%;
   height: 0.5rem;
-  background-color: #a67351;
+  background-color: #bda79d;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 2%;
   border-radius: 2px;
+}
+
+.language-batch {
+  background-color: #55433b!important;
+  border: none !important;
+  box-shadow: none;
 }
 
 .Spacer {
@@ -100,14 +118,15 @@ border-radius: 5px;
 
 
 .FudgeText {
-  color: #C38154;
+  /* color: #663017; */
 
 }
 
 
 #overlayImage {
   max-width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none !important;
 }
 
 .overlay {
@@ -132,31 +151,20 @@ border-radius: 5px;
 }
 
 
-#TutorialHeader {
-  max-width: 100%;
-  height: auto;
-  border: none;
-  border-radius: 0px;
-  margin-right: 200px;
-  margin-left: auto;
-  display: contents;
+#logo {
+  border: none !important;
 }
 
 
-#sticky{
-  z-index: 3;
-}
-
-
-
-.sidebar a {
-  transition: 0.2s;
+#welcome h1 {
+  padding-top: 100px;
+  padding-left: 100px;
+  font-size: 20px !important;
 }
 
 #wrapper {
   margin-right: 0px;
   margin-left: 0px;
-  transition: margin-left .5s;
   padding: 25px;
   display: block;
 }
@@ -167,18 +175,22 @@ border-radius: 5px;
     margin-left: 250px;
   }
 
-  .sidebar {
-    font-size: 24px;
+
+  #welcome h1 {
+    font-size: 30px !important;
   }
 
 }
 
 
 .btn-success {
-  background-color: #a67351 !important;
+  background-color: #9d5f43!important;
   border: solid black 1px !important;
+  height: auto;
+  word-wrap: break-word;
+  font-size: 25px !important;
 }
 
 .btn-success:hover {
-  background-color: #FFC26F !important;
+  background-color: #b26525 !important;
 }
