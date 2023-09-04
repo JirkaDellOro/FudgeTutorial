@@ -60,7 +60,6 @@
         <img class="" id="overlayImage" src="" alt="Enlarged Image" />
       </div>
 
-    
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg" id="sticky">
         <a class="navbar-brand" href="#">
@@ -84,7 +83,8 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i>
+          <span class="navbar-toggler-icon"
+            ><i class="fa fa-bars" aria-hidden="true"></i>
           </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -125,7 +125,6 @@
           call for help in Discord in the game lab.
         </p>
         <h2 id="creating-a-new-project">Creating a new project</h2>
-        <hr />
         <p>
           To start a new project in FUDGE, go to Project - New , and select the
           folder of your choice. The editor will create all the data you need
@@ -133,11 +132,15 @@
           the project.
         </p>
         <h2 id="overview-editor">Overview Editor</h2>
-        <hr />
         <img
-          src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/bb2671fb-e08a-476c-b042-f707c5a9d483"
+          class="mx-auto d-block"
+          src="Images/Screenshots/Overview Editor.png"
           alt="BildEditorAufbauExampleScaled"
         />
+        <div class="pictureBottom">
+          Picture 2 - overview editor
+          <hr />
+        </div>
         <p>
           Once the project is created, you can now open the tabs for editing the
           project. In the Project tab you can create new projects, load existing
@@ -148,19 +151,21 @@
           can open the browser console in case you accidentally closed it or
           show the window in full screen.
         </p>
-        <div class="FloatClearer"></div>
 
         <img
+        class="mx-auto d-block"
           src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/b7d5389c-7bd4-4f65-95fd-7f1211c68577"
           alt="BildLinkTheme"
         />
+        <div class="pictureBottom">
+          Picutre 3 - FUDGE editor styles
+          <hr />
+        </div>
         <p>
           It is good to know that you can change the theme of the editor as you
           like or even design one yourself. Go to HTML - Fudge.html and comment
           the desired theme or create a new stylesheet and include it there.
         </p>
-
-        <div class="FloatClearer"></div>
         <pre><code class="language-markup"> 
 &lt;!-- &lt;tlink type="text/css" rel="stylesheet" href="../Themes/LightGray/Colors.css" /> -->
 &lt;!-- &lt;link type="text/css" rel="stylesheet" href="../Themes/DarkGray/Colors.css" /> -->
@@ -178,58 +183,69 @@
           expanding the messages in the browser console.
         </div>
         <img
-          src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/1bf8168c-844e-48e5-a252-62faa63ac8ea"
+        class="mx-auto d-block"
+          src="Images/Screenshots/Change Browser Console.png"
           alt="BildChangeBrowserConsoleSettings"
         />
-
-        <div class="FloatClearer"></div>
-
+        <div class="pictureBottom">
+          Picture 4 - browser console
+          <hr />
+        </div>
+        <br />
         <h2 id="overview-folder-structure">Overview folder structure</h2>
-        <p>
-          <img
-            src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/eecdf856-7396-4995-b6d9-15cb96866564"
-            alt="OrdnerStruktur"
-          />
-        </p>
         <p>
           Since the project is stored locally in your folder, you can also view
           them in Explorer. This is where all the resources you need for your
           project are created and stored.
         </p>
-        <div class="FloatClearer"></div>
+        <p>
+          <img
+            src="Images/Screenshots/Folder Strucutre.png"
+            alt="OrdnerStruktur"
+          />
+        </p>
+        <div class="pictureBottom">
+          Picture 5 - Structure
+          <hr />
+        </div>
 
         <p>
           Here you can also add your own images, graphics, models that you may
           need for your project. It is best to create a new folder for external
           data to keep the overview.
         </p>
-        <h2 id="create-graph">Create Graph</h2>
-        <p>
-          <img
-            src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/4b561b83-d33d-4483-aecb-7df9c31d1865"
-            alt="BildNothingHereScaled"
-          />
-        </p>
+        <h1 id="create-graph">Create Graph</h1>
+        <div class="Line"></div>
         <p>
           The project has been created, but there is no content to view it yet.
           If you want to view your project right now, the internet browser will
           give you the following error message:
         </p>
-        <div class="FloatClearer"></div>
 
-        <p>
-          <img
-            src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/21f603d5-7e23-425a-b4ca-bd2e81428587"
-            alt="BildAblaufCreateMesh"
-          />
-        </p>
+        <img
+          src="Images/Screenshots/Empty Graph.png"
+          alt="BildNothingHereScaled"
+        />
+        <div class="pictureBottom">
+          Picture 6 - empty graph
+          <hr />
+        </div>
+
         <p>
           Now, to see something on the browser, we need to add a graph, mesh and
           material to the project. To do this, right-click on Internal in the
           editor and follow the steps on the following image:
         </p>
-        <div class="FloatClearer"></div>
 
+        <img
+          src="Images/Screenshots/Create Graph.png"
+          alt="BildAblaufCreateMesh"
+        />
+        <div class="pictureBottom">
+          Picture 7 - create graph
+          <hr />
+        </div>
+        <br />
         <h2 id="test-the-project-in-the-browser">
           Test the project in the browser
         </h2>
@@ -242,13 +258,19 @@
           <li>localhost</li>
           <li>GitHub Pages, where you upload your project to GitHub.</li>
         </ul>
+        <br />
         <h2 id="json-overview">JSON Overview</h2>
-        <p>
-          <img
-            src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/0722d4b7-635b-4989-bac3-f47007967c10"
-            alt="BildAufbauJSON"
-          />
-        </p>
+
+        <img
+        class="mx-auto d-block"
+          src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/0722d4b7-635b-4989-bac3-f47007967c10"
+          alt="BildAufbauJSON"
+        />
+        <div class="pictureBottom">
+          Picture 8 - JSON
+          <hr />
+        </div>
+
         <p>
           If you look at the internal.json file on your development environment,
           you will see all the resources that FUDGE has created over the course
@@ -257,7 +279,6 @@
           the previous step.
         </p>
 
-        <div class="FloatClearer"></div>
         <pre><code class="language-json"></code>Internal.json
             // insert internal-json here
           </pre>
@@ -267,26 +288,32 @@
           file will change and expand as we add new objects and connect existing
           ones.
         </p>
-        <h2 id="build-a-graph">Build a graph</h2>
-        <p>
-          <img
-            src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/15baf0ef-a8f8-4818-883d-64b774908f04"
-            alt="BildCreateNodeScaled"
-          />
-        </p>
+        <h1 id="build-a-graph">Build a graph</h1>
+        <div class="Line"></div>
+
+        <img
+          src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/15baf0ef-a8f8-4818-883d-64b774908f04"
+          alt="BildCreateNodeScaled"
+        />
+        <div class="pictureBottom">
+          Picture 9 -build graph
+          <hr />
+        </div>
         <p>
           To view the created resources in the browser, they must first be
           attached to a node. For this, a node must be created in the editor. If
           you drag the graph into the editor, it will create a node itself.
         </p>
-        <div class="FloatClearer"></div>
 
-        <p>
-          <img
-            src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/51a230f3-abb2-43e1-b141-0de3e7726858"
-            alt="BildAppendResources"
-          />
-        </p>
+        <img
+          src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/51a230f3-abb2-43e1-b141-0de3e7726858"
+          alt="BildAppendResources"
+        />
+        <div class="pictureBottom">
+          Picture 10 - manipulate components
+          <hr />
+        </div>
+
         <p>
           For the remaining components, you have to create a node yourself and
           attach the resources. This can be done by drag&amp;drop. First the
@@ -294,15 +321,16 @@
           by right-clicking - add Component - ComponentMesh/ComponentMaterial
           and then attach the desired resources from the Internal tab.
         </p>
-        <div class="FloatClearer"></div>
-
+        <br />
         <h2 id="pivot">Pivot</h2>
-        <p>
-          <img
-            src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/0c155834-644b-4294-b6c5-bbd359c70e49"
-            alt="BildComponentAttributesScaled"
-          />
-        </p>
+        <img
+          src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/0c155834-644b-4294-b6c5-bbd359c70e49"
+          alt="BildComponentAttributesScaled"
+        />
+        <div class="pictureBottom">
+          Picture 11 - pivot point
+          <hr />
+        </div>
         <p>
           Each node and resource has its own point (pivot) in the coordinate
           system. Around this point they can be moved, rotated and scaled.
@@ -314,8 +342,7 @@
             move)),(rotate),(scale)) and with the mouse in the graph editor.
           </li>
         </ul>
-        <div class="FloatClearer"></div>
-
+        <br />
         <h2 id="meshes-and-their-parameters">Meshes and their parameters</h2>
         <p>
           FUDGE offers you several meshes that you can use for your project.

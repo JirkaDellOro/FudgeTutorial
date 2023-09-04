@@ -57,8 +57,8 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 50px;
-  border: solid 5px #55433b !important;
+  margin-bottom: 0px;
+  border: solid 1px #55433b !important;
   cursor: pointer;
 }
 
@@ -102,7 +102,7 @@ img {
 }
 
 .language-batch {
-  background-color: #55433b!important;
+  background-color: #55433b !important;
   border: none !important;
   box-shadow: none;
 }
@@ -148,7 +148,18 @@ img {
   border: none;
   margin-top: 1%;
   margin-bottom: 2%;
+  border: none !important;
 }
+
+.pictureBottom {
+  color: grey;
+  opacity: 60%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+
 
 
 #logo {
@@ -184,7 +195,7 @@ img {
 
 
 .btn-success {
-  background-color: #9d5f43!important;
+  background-color: #9d5f43 !important;
   border: solid black 1px !important;
   height: auto;
   word-wrap: break-word;

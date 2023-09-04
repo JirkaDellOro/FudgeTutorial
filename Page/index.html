@@ -135,8 +135,8 @@
           Welcome to the <span class="FudgeText">Fudge</span>Tutorial.
           <br />
           <p></p>
-          Here you can learn how FUDGE is built and how to work with its
-          functionalities.
+          This is the place where you can discover the process of constructing
+          FUDGE and learn how to effectively utilize its functionalities.
         </h1>
 
         <br />
@@ -157,38 +157,48 @@
 
             <div class="Line"></div>
             <p>
-              First of all, you need to set up the working environment. Here we
-              will show you how to install the FUDGE repository on your
-              environment and get the first glimpse of the FUDGE editor.
+              To begin, you'll need to establish your working environment.
+              <br />
+              Here, we'll guide you through the process of installing the FUDGE
+              repository in your environment and provide your first look at the
+              FUDGE editor.
             </p>
-            <h2 id="create-a-github-account">1. create a GitHub account</h2>
             <br />
+            <h2 id="create-a-github-account">Create a GitHub account</h2>
             <p>
-              this is optional, as you will be able to download the repository
-              locally even without an account. Note, however, that upcoming
-              changes to the engine will not be applied and you will have to
-              manually re-download new versions.
-            </p>
-            <p>
-              A new account can be created<a
+              A new account can be created
+              <a
                 href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home"
-                style="color: #a67351; font-weight: 800"
+                style="color: rgb(178, 101, 37); font-weight: 800"
                 >here.</a
               >
             </p>
-            <h2 id="download-clone-fudge-repository">
-              2. download/clone FUDGE-Repository
-            </h2>
-            <br />
             <p>
-              Open the FUDGE repository via Code -&gt; Clone or via GitHub
-              Desktop and clone the repository. As mentioned earlier, you can
-              simply download the repository as a ZIP locally to your working
-              environment.
+              This step is optional, as you can download the repository locally
+              without needing an account. <br />
+              <span style="font-weight: 600">
+                Keep in mind, though, that any future engine updates won't be
+                automatically applied, and you'll need to manually download new
+                versions.
+              </span>
             </p>
-
-            <h2 id="install-fudge">3. install FUDGE</h2>
             <br />
+            <h2 id="download-clone-fudge-repository">
+              Download/clone FUDGE-Repository
+            </h2>
+            <div>
+              Open the FUDGE repository via:
+              <ul>
+                <li>Code -&gt; Clone</li>
+                <li>via GitHub Desktop and clone the repository</li>
+              </ul>
+              <p></p>
+              <p></p>
+              As mentioned earlier, you can simply download the repository as a
+              ZIP locally to your working environment.
+            </div>
+            <br />
+            <h2 id="install-fudge">Install FUDGE</h2>
             <p>
               In order to install FUDGE, you need to make sure that you have the
               following installed in addition to the local files:
@@ -204,19 +214,14 @@
                 <strong>Nodejs</strong> - needed to install FUDGE and get it
                 running.
               </li>
-              <br />
               <li>
                 <strong>TypeScript</strong> - This is optional, but recommended
                 to write custom scripts in FUDGE. To install TypeScript
                 globally, type
                 <br />
-                <br />
-
                 <div>
                   <pre><code class="language-batch">npm install -g typescript</code></pre>
                 </div>
-                <br />
-
                 in the terminal. Alternatively, you can use JavaScript to write
                 the scripts.
               </li>
@@ -229,53 +234,57 @@
               <li>
                 Install the needed modules via
                 <div>
-                  <br />
                   <pre><code class="language-batch">npm install --omit=dev</code></pre>
                 </div>
 
-                in the terminal in the folder where FUDGE is included or just
-                run the install.bat(Windows only). If the repository has been
-                cloned, you can skip the first step.
+                in the folder where FUDGE is included or just run the
+                install.bat(Windows only). If the repository has been cloned,
+                you can skip the first step.
               </li>
             </ul>
             <br />
-            <h2 id="start-editor">4. Start editor</h2>
-            <br />
-
-            <p>to open the FUDGE editor now, you have the following options:</p>
+            <h1 id="start-editor">Start editor</h1>
+            <div class="Line"></div>
+            <p>to open the FUDGE editor, you have the following options:</p>
             <ul>
               <li>
-                type electron
+                type electron in the terminal
                 <p></p>
                 <div>
                   <pre><code class="language-batch">editor/electron</code></pre>
                 </div>
-                <p></p>
-
-                in the terminal
+                <br />
               </li>
               <p></p>
               <li>
                 alternatively you can use
-                <p></p>
                 <div>
                   <pre><code class="language-batch">npm run-script run</code></pre>
                 </div>
-                <p></p>
+                <br />
               </li>
               <li>use the FUDGE.bat file in the folder (Windows only)</li>
             </ul>
+            <br />
             <h2 id="user-interface">User Interface</h2>
-
             <p>
-              If the installation was completed successfully, you will now see
-              an empty window with a browser console.
+              If the installation was successfully, you will see an empty window
+              with a browser console as in picture 1.
             </p>
-            <img
-              class="mx-auto d-block"
-              src="Images/Screenshots/User Interface.png"
-              alt="BildEditorEmptyScaled"
-            />
+            <div>
+              <img
+                class="mx-auto d-block"
+                src="Images/Screenshots/User Interface.png"
+                alt="BildEditorEmptyScaled"
+              />
+              <div class="pictureBottom">
+                PICTURE 1 - FUDGE editor
+                <hr />
+              </div>
+            </div>
+            <span style="font-size: 25px;">
+              Congratulations! You have succesfully installed FUDGE.
+            </span>
           </div>
         </div>
         <div id="extra"></div>
