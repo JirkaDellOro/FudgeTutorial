@@ -153,7 +153,7 @@
         </p>
 
         <img
-        class="mx-auto d-block"
+          class="mx-auto d-block"
           src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/b7d5389c-7bd4-4f65-95fd-7f1211c68577"
           alt="BildLinkTheme"
         />
@@ -183,7 +183,7 @@
           expanding the messages in the browser console.
         </div>
         <img
-        class="mx-auto d-block"
+          class="mx-auto d-block"
           src="Images/Screenshots/Change Browser Console.png"
           alt="BildChangeBrowserConsoleSettings"
         />
@@ -233,8 +233,9 @@
 
         <p>
           Now, to see something on the browser, we need to add a graph, mesh and
-          material to the project. To do this, right-click on Internal in the
-          editor and follow the steps on the following image:
+          material to the project. Start by adding a graph. right-click inside
+          the Internal window and select:
+          <span style="font-style: italic">create graph</span>
         </p>
 
         <img
@@ -245,6 +246,13 @@
           Picture 7 - create graph
           <hr />
         </div>
+
+        <p>Repeat the process and add:</p>
+        <ul>
+          <li>Mesh - MeshCube</li>
+          <li>Material - ShaderLit</li>
+        </ul>
+
         <br />
         <h2 id="test-the-project-in-the-browser">
           Test the project in the browser
@@ -254,33 +262,65 @@
           other devices, you can do this via
         </p>
         <ul>
-          <li>LiveServer plugin, which VSC provides.</li>
+          <li>LiveServer plugin, which Visual Studio Code provides.</li>
           <li>localhost</li>
           <li>GitHub Pages, where you upload your project to GitHub.</li>
         </ul>
         <br />
         <h2 id="json-overview">JSON Overview</h2>
 
-        <img
-        class="mx-auto d-block"
+        <!-- <img
+          class="mx-auto d-block"
           src="https://github.com/JirkaDellOro/FudgeTutorial/assets/101626054/0722d4b7-635b-4989-bac3-f47007967c10"
           alt="BildAufbauJSON"
         />
         <div class="pictureBottom">
           Picture 8 - JSON
           <hr />
-        </div>
+        </div> -->
 
         <p>
-          If you look at the internal.json file on your development environment,
-          you will see all the resources that FUDGE has created over the course
-          of the project, what attributes they have, and how they relate to each
-          other. Here you can see the graph, mesh and material you created in
-          the previous step.
+          When you open the internal.json file in your
+          development environment, you can observe all the resources generated
+          by FUDGE throughout the project. This file provides insights into
+          their attributes and how they are interconnected. In this section,
+          you'll find information about the graph, mesh, and material that you
+          created in the previous step.
         </p>
 
-        <pre><code class="language-json"></code>Internal.json
-            // insert internal-json here
+        <pre><code class="language-json"></code>
+          
+            {
+              "Graph|2023-09-04T14:05:03.264Z|94531": {
+                "ƒ.Graph": {
+                  "name": "TutorialGraph",
+                  "active": true,
+                  "components": {},
+                  "children": [],
+                  "idResource": "Graph|2023-09-04T14:05:03.264Z|94531",
+                  "type": "Graph"
+                }
+              },
+              "MeshCube|2023-09-04T14:05:16.565Z|46196": {
+                "ƒ.MeshCube": {
+                  "idResource": "MeshCube|2023-09-04T14:05:16.565Z|46196",
+                  "name": "MeshCube",
+                  "type": "MeshCube"
+                }
+              },
+              "Material|2023-09-04T14:05:21.348Z|29321": {
+                "ƒ.Material": {
+                  "name": "ShaderLit",
+                  "idResource": "Material|2023-09-04T14:05:21.348Z|29321",
+                  "shader": "ShaderLit",
+                  "coat": {
+                    "ƒ.CoatColored": {
+                      "color": "[1, 1, 1, 1]"
+                    }
+                  }
+                }
+              }
+            }
           </pre>
 
         <p>

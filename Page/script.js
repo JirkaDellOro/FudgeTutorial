@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
   let polys = this.document.getElementsByTagName("img");
   for (let i = 0; i < polys.length; i++) {
     if (polys[i].id == "logo") {
-      console.log(polys[i].id);
+      // console.log(polys[i].id);
       continue;
     }
     polys[i].onclick = () => openOverlay(polys[i].src);
@@ -36,7 +36,7 @@ var body = $(window).height();
 
 $(window).on("resize", function () {
   body = $(window).height();
-  console.log(body);
+  // console.log(body);
 });
 
 var controller = new ScrollMagic.Controller();
